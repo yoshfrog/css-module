@@ -19,4 +19,3 @@
 [mix-blend-mode_text_img](https://yoshfrog.github.io/css-module/blend-mode/mix-blend-mode_text_img.html)<br>
 [background-blend-mode](https://yoshfrog.github.io/css-module/blend-mode/background-blend-mode.html)<br>
 [mix-blend-mode_difference](https://yoshfrog.github.io/css-module/blend-mode/mix-blend-mode_difference.html)<br>
-
