@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+img { width: 100%; height: auto; }
+.c-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-item {
+  position: relative;
+  justify-content: space-between;
+  flex-basis: 32%;
+  height: 200px;
+  margin: calc(4% / 6);
+  background: #999;
+}
+.c-text {
+  position: absolute;
+  font-size: 6vw;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: pink;
+}
+.c-text.is-normal { mix-blend-mode: normal; }
+.c-text.is-overlay { mix-blend-mode: overlay; }
+.c-text.is-saturation { mix-blend-mode: saturation; }
+.c-text.is-screen { mix-blend-mode: screen; }
+.c-text.is-color { mix-blend-mode: color; }
+.c-text.is-color-burn { mix-blend-mode: color-burn; }
+.c-text.is-color-dodge { mix-blend-mode: color-dodge; }
+.c-text.is-darken { mix-blend-mode: darken; }
+.c-text.is-difference { mix-blend-mode: difference; }
+.c-text.is-exclusion { mix-blend-mode: exclusion; }
+.c-text.is-hard-light { mix-blend-mode: hard-light; }
+.c-text.is-hue { mix-blend-mode: hue; }
+.c-text.is-lighten { mix-blend-mode: lighten; }
+.c-text.is-luminosity { mix-blend-mode: luminosity; }
+.c-text.is-multiply { mix-blend-mode: multiply; }
+.c-text.is-soft-light { mix-blend-mode: soft-light; }
+</style>
+<body>
+<h1>mix-blend-mode: テキスト</h1>
+<p>IE非対応</p>
+
+<div class="c-flex">
+
+  <div class="c-item">
+    <p class="c-text is-normal">normal</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-overlay">overlay</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-saturation">saturation</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-screen">screen</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-color">color</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-color-burn">color-burn</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-color-dodge">color-dodge</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-darken">darken</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-difference">difference</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-exclusion">exclusion</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-hard-light">hard-light</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-hue">hue</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-lighten">lighten</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-luminosity">luminosity</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-multiply">multiply</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-text is-soft-light">soft-light</p>
+  </div><!-- /.c-item -->
+
+</div><!-- /.c-flex -->
+
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.c-box {
+  width: 85%;
+  border:1px solid #999;
+}
+.c-item {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  animation: anim 3s infinite;
+}
+@keyframes anim {
+  0%{ left: 0; }
+  100%{ left: 93%; }
+}
+.ease { animation-timing-function: ease; }
+.linear { animation-timing-function: linear; }
+.easeIn { animation-timing-function: ease-in; }
+.easeOut { animation-timing-function: ease-out; }
+.easeInOut { animation-timing-function: ease-in-out; }
+.easeInSine { animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); }
+.easeOutSine { animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); }
+.easeInOutSine { animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); }
+.easeInQuad { animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+.easeOutQuad { animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.easeInOutQuad { animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.easeInCubic { animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.easeOutCubic { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+.easeInOutCubic { animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); }
+.easeInQuart { animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+.easeOutQuart { animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); }
+.easeInOutQuart { animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1); }
+.easeInQuint { animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); }
+.easeOutQuint { animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+.easeInOutQuint { animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1); }
+.easeInExpo { animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035); }
+.easeOutExpo { animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+.easeInOutExpo { animation-timing-function: cubic-bezier(1, 0, 0, 1); }
+.easeInCirc { animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+.easeOutCirc { animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
+.easeInOutCirc { animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+.easeInBack { animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+.easeOutBack { animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.easeInOutBack { animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+</style>
+<body>
+
+<div class="l-main">
+
+  <div class="c-box">
+    ease
+    <div class="c-item ease"></div>
+  </div>
+
+  <div class="c-box">
+    linear
+    <div class="c-item linear"></div>
+  </div>
+
+  <div class="c-box">
+    easeIn
+    <div class="c-item easeIn"></div>
+  </div>
+
+  <div class="c-box">
+    easeOut
+    <div class="c-item easeOut"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOut
+    <div class="c-item easeInOut"></div>
+  </div>
+
+  <div class="c-box">
+    easeInSine
+    <div class="c-item easeInSine"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutSine
+    <div class="c-item easeOutSine"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutSine
+    <div class="c-item easeInOutSine"></div>
+  </div>
+
+  <div class="c-box">
+    easeInQuad
+    <div class="c-item easeInQuad"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutQuad
+    <div class="c-item easeOutQuad"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutQuad
+    <div class="c-item easeInOutQuad"></div>
+  </div>
+
+  <div class="c-box">
+    easeInCubic
+    <div class="c-item easeInCubic"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutCubic
+    <div class="c-item easeOutCubic"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutCubic
+    <div class="c-item easeInOutCubic"></div>
+  </div>
+
+  <div class="c-box">
+    easeInQuart
+    <div class="c-item easeInQuart"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutQuart
+    <div class="c-item easeOutQuart"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutQuart
+    <div class="c-item easeInOutQuart"></div>
+  </div>
+
+  <div class="c-box">
+    easeInQuint
+    <div class="c-item easeInQuint"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutQuint
+    <div class="c-item easeOutQuint"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutQuint
+    <div class="c-item easeInOutQuint"></div>
+  </div>
+
+  <div class="c-box">
+    easeInExpo
+    <div class="c-item easeInExpo"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutExpo
+    <div class="c-item easeOutExpo"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutExpo
+    <div class="c-item easeInOutExpo"></div>
+  </div>
+
+  <div class="c-box">
+    easeInCirc
+    <div class="c-item easeInCirc"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutCirc
+    <div class="c-item easeOutCirc"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutCirc
+    <div class="c-item easeInOutCirc"></div>
+  </div>
+
+  <div class="c-box">
+    easeInBack
+    <div class="c-item easeInBack"></div>
+  </div>
+
+  <div class="c-box">
+    easeOutBack
+    <div class="c-item easeOutBack"></div>
+  </div>
+
+  <div class="c-box">
+    easeInOutBack
+    <div class="c-item easeInOutBack"></div>
+  </div>
+
+</div>
+
+</body>
+</html>

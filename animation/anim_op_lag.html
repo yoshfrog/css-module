@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+* {margin: 0; padding: 0;}
+img { width: 100%; height: 100%; }
+.anim-wrap {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 67%;
+	background-color: #ccc;
+}
+.anim-wrap > div {
+	position: absolute;
+	width: 50vw;
+}
+.anim-wrap > div.after {
+	opacity: 0;
+	z-index: 1;
+}
+.anim-wrap .anim-01 { top: 0; left: 0; }
+.anim-wrap .anim-02 { top: 0; right: 0; }
+.anim-wrap .anim-03 { bottom: 0; left: 0; }
+.anim-wrap .anim-04 { bottom: 0; right: 0; }
+
+.anim-wrap .anim-01.after { animation: anim .8s ease 1s forwards; }
+.anim-wrap .anim-02.after { animation: anim .8s ease 1.5s forwards; }
+.anim-wrap .anim-03.after { animation: anim .8s ease 2s forwards; }
+.anim-wrap .anim-04.after { animation: anim .8s ease 2.5s forwards; }
+
+@-webkit-keyframes anim {
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes anim {
+	100% {
+		opacity: 1;
+	}
+}
+
+.anim-wrap .anim-last {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 40vw;
+	height: 40vw;
+	z-index: 10;
+	opacity: 0;
+	animation: anim-last 1s ease 3.5s forwards;
+}
+
+@-webkit-keyframes anim-last {
+	0% {
+		transform: translate(-50%, -50%) scale(.8);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+@keyframes anim-last {
+	0% {
+		transform: translate(-50%, -50%) scale(.8);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+</style>
+</head>
+<body>
+<div class="anim-wrap">
+	<div class="anim-01">
+		<img src="https://placehold.jp/300x200.png?text=anim-01">
+	</div>
+	<div class="anim-01 after">
+		<img src="https://placehold.jp/5dab9f/fff/300x200.png?text=anim-01 after">
+	</div>
+	<div class="anim-02">
+		<img src="https://placehold.jp/300x200.png?text=anim-02">
+	</div>
+	<div class="anim-02 after">
+		<img src="https://placehold.jp/9CCED9/fff/300x200.png?text=anim-02 after">
+	</div>
+	<div class="anim-03">
+		<img src="https://placehold.jp/300x200.png?text=anim-03">
+	</div>
+	<div class="anim-03 after">
+		<img src="https://placehold.jp/FDE2AD/fff/300x200.png?text=anim-03 after">
+	</div>
+	<div class="anim-04">
+		<img src="https://placehold.jp/300x200.png?text=anim-04">
+	</div>
+	<div class="anim-04 after">
+		<img src="https://placehold.jp/F2B6C1/fff/300x200.png?text=anim-04 after">
+	</div>
+	<div class="anim-last">
+		<img src="https://placehold.jp/d42670/fff/200x200.png?text=anim-last">
+	</div>
+</div>
+
+</body>
+</html>

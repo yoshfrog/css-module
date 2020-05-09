@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.l-main {
+  height: 100vh;
+  position: relative;
+}
+.p-scroll {
+  width: 10%;
+  height: 3em;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  padding-top: 1em;
+  z-index: 1;
+}
+.p-scroll_link {
+  display: block;
+  font-size: 12px;
+}
+.p-scroll_text {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+}
+.p-scroll_line {
+  overflow: hidden;
+  width: 20%;
+  height: 2em;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.p-scroll_line:after {
+  content: '';
+  width: 1px;
+  height: 55%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background: #000;
+  animation: scrollAnim 1.6s ease-in-out .6s infinite;
+}
+@keyframes scrollAnim {
+  0% { height: 0;}
+  75% { height: 55%;}
+}
+</style>
+<body>
+
+<div class="l-main">
+  <div class="p-scroll">
+    <a class="p-scroll_link" href="">
+      <span class="p-scroll_text">SCROLL</span>
+      <span class="p-scroll_line"></span>
+    </a>
+  </div>
+</div><!-- /.l-main -->
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.l-main {
+  height: 100vh;
+  position: relative;
+}
+.p-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 3em;
+  height: 3em;
+  z-index: 1;
+}
+.p-scroll_link {
+  display: block;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+.p-scroll_link:after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border-bottom: solid 2px #333;
+  border-right: solid 2px #333;
+  animation: scrollAnim 1.8s ease 0s infinite;
+}
+@keyframes scrollAnim {
+  0% { opacity: 0;}
+  10% { opacity: 0; transform: translate(-50%, -10px) rotate(45deg)}
+  85% { opacity: 1; transform: translate(-50%, 0) rotate(45deg)}
+  100% { opacity: 0;}
+}
+</style>
+<body>
+
+<div class="l-main">
+  <div class="p-scroll">
+    <a class="p-scroll_link" href="">SCROLL</a>
+  </div>
+</div><!-- /.l-main -->
+
+</body>
+</html>

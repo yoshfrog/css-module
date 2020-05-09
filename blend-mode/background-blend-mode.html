@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+img { width: 100%; height: auto; }
+.c-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-item {
+  justify-content: space-between;
+  flex-basis: 32%;
+  height: 200px;
+  margin: calc(4% / 6);
+}
+.c-bg {
+  position: relative;
+  font-size: 2vw;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  background: url(https://picsum.photos/300/200) no-repeat center center/cover;
+  background-color: pink;
+}
+.c-bg.is-normal { background-blend-mode: normal; }
+.c-bg.is-overlay { background-blend-mode: overlay; }
+.c-bg.is-saturation { background-blend-mode: saturation; }
+.c-bg.is-screen { background-blend-mode: screen; }
+.c-bg.is-color { background-blend-mode: color; }
+.c-bg.is-color-burn { background-blend-mode: color-burn; }
+.c-bg.is-color-dodge { background-blend-mode: color-dodge; }
+.c-bg.is-darken { background-blend-mode: darken; }
+.c-bg.is-difference { background-blend-mode: difference; }
+.c-bg.is-exclusion { background-blend-mode: exclusion; }
+.c-bg.is-hard-light { background-blend-mode: hard-light; }
+.c-bg.is-hue { background-blend-mode: hue; }
+.c-bg.is-lighten { background-blend-mode: lighten; }
+.c-bg.is-luminosity { background-blend-mode: luminosity; }
+.c-bg.is-multiply { background-blend-mode: multiply; }
+.c-bg.is-soft-light { background-blend-mode: soft-light; }
+</style>
+<body>
+<h1>background-blend-mode:背景画像</h1>
+<p>IE非対応</p>
+
+<div class="c-flex">
+
+  <div class="c-item">
+    <p class="c-bg is-normal">normal</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-overlay">overlay</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-saturation">saturation</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-screen">screen</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-color">color</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-color-burn">color-burn</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-color-dodge">color-dodge</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-darken">darken</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-difference">difference</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-exclusion">exclusion</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-hard-light">hard-light</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-hue">hue</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-lighten">lighten</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-luminosity">luminosity</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-multiply">multiply</p>
+  </div><!-- /.c-item -->
+
+  <div class="c-item">
+    <p class="c-bg is-soft-light">soft-light</p>
+  </div><!-- /.c-item -->
+
+</div><!-- /.c-flex -->
+
+</body>
+</html>

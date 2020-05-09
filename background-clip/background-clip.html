@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+.padding-box_wrap {
+  margin: 1em;
+  padding: 1em;
+  color: #fff;
+  background: url(https://picsum.photos/1000/200) no-repeat top left/100% 100%;
+}
+.padding-box_inner {
+  padding: 1em;
+  background: #333;
+  border: 1em solid rgba(255, 192, 203, 0.5);
+  background-clip: padding-box;
+}
+.border-box_wrap {
+  margin: 1em;
+  padding: 1em;
+  color: #fff;
+  background: #333;
+}
+.border-box_inner {
+  padding: 1em;
+  border: 1em solid rgba(255, 192, 203, 0.5);
+  background: url(https://picsum.photos/1000/200) no-repeat left top/cover;
+  background-origin: border-box;
+  background-clip: border-box;
+}
+.content-box_wrap {
+  margin: 1em;
+  padding: 1em;
+  color: #fff;
+  background: #333;
+}
+.content-box_inner {
+  padding: 1em;
+  border: 1em solid rgba(255, 192, 203, 0.5);
+  background: url(https://picsum.photos/1000/200) no-repeat left top/cover;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.text_wrap {
+  margin: 1em;
+  color: #fff;
+  background: #333;
+}
+.text_inner {
+  padding: .5em;
+  font-size: 50px;
+  font-weight: bold;
+  color: transparent;
+  background: url(https://picsum.photos/1000/200) no-repeat left top/cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+</style>
+<body>
+
+  <div class="padding-box_wrap">
+    <div class="padding-box_inner">background-clip: padding-box;</div>
+  </div>
+
+  <div class="border-box_wrap">
+    <div class="border-box_inner">background-clip: border-box;</div>
+  </div>
+
+  <div class="content-box_wrap">
+    <div class="content-box_inner">background-clip: content-box;</div>
+  </div>
+
+  <div class="text_wrap">
+    <div class="text_inner">background-clip: text;</div>
+  </div>
+
+</body>
+</html>
